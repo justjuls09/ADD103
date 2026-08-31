@@ -1,0 +1,22 @@
+/* Ugly page background styling */
+body {
+    background-color: #FF00FF;
+    background-image: url('background.jpg');
+}
+
+/* Heading color styles */
+h1 {
+    color: #FFFF00;
+}
+
+h2 {
+    color: rgb(255, 69, 0);
+}
+
+/* Ugly blockquote styling */
+blockquote {
+    background-color: rgba(255, 255, 0, 0.5);
+    border-left: 10px dashed red;
+    padding: 10px;
+    margin: 20px;
+}
