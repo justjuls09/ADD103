@@ -1,0 +1,23 @@
+/* Gallery image styling */
+.gallery-pic {
+    max-width: 300px;
+    width: 100%;
+    margin: 10px;
+    border: 3px solid #555;
+    border-radius: 8px;
+}
+
+/* Button styling */
+.nav-btn {
+    display: inline-block;
+    background-color: #6b7280;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.nav-btn:hover {
+    background-color: #374151;
+}
