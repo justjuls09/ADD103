@@ -1,0 +1,82 @@
+/* General Page Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    background-color: #1b263b;
+    color: white;
+    padding: 20px;
+}
+
+.hero-text,
+.hero-img {
+    flex-basis: 50%;
+}
+
+.hero-text {
+    padding: 20px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    background-color: #4cc9f0;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+/* Services Section */
+
+.services {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+}
+
+.service-card {
+    flex-grow: 1;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+/* Two Column Layout */
+
+.page-wrapper {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    flex-grow: 0;
+    background-color: #dddddd;
+    padding: 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1b263b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
