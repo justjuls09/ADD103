@@ -1,0 +1,50 @@
+
+Topic - Local computer/printing training and help site
+Audience - anyone looking for some extra help with computers and 3d printing
+Sitemap 
+Home page - contains an overview of as shown below with main content
+Training page 
+Printing page
+Help page
+
+
+This is a rough draft of what the main page could look like
+
+
+-------------------------------------------------
+HEADER
+Techie Tina's Tech Lab
+Logo / Banner
+-------------------------------------------------
+
+NAVIGATION (FLEX CONTAINER)
+Home | Projects | 3D Printing | Tutorials |
+About | Contact
+-------------------------------------------------
+
+HERO SECTION (GRID AREA: hero)
+Welcome Message
+Featured Server Photo
+-------------------------------------------------
+
+MAIN CONTENT (GRID CONTAINER)
+
+-------------------------------------------------
+| GRID AREA: projects | GRID AREA: printing     |
+| Home Lab Projects   | Beginner 3D Printing    |
+-------------------------------------------------
+| GRID AREA: tutorial | GRID AREA: about        |
+| Latest Tutorials    | Meet Techie Tina        |
+-------------------------------------------------
+
+-------------------------------------------------
+SIDEBAR (GRID AREA: sidebar)
+Quick Links
+Recent Posts
+-------------------------------------------------
+
+FOOTER (FLEX CONTAINER)
+Copyright
+Social Links
+Contact Info
+-------------------------------------------------
