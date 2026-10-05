@@ -5,6 +5,9 @@
     --shadow-color: #888888;
     --text-color: #333333;
 }
+* {
+    box-sizing: border-box;
+}
 body {
     color: var(--text-color);
 }
@@ -15,6 +18,44 @@ header h1 {
 }
 
 .column-card {
+    display: inline-block;
+    width: 48%;
+    margin: 1%;
+    padding: 20px;
+
     border: 1px solid var(--border-color);
+    border-radius: 8px;
+
     background-color: var(--secondary-color);
+
+    vertical-align: top;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dashed black;
+    cursor: help;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -90px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
