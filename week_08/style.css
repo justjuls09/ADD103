@@ -1,0 +1,267 @@
+:root {
+    --primary-color: #582c83;
+    --secondary-color: #e8e5f0;
+    --border-color: #c8c8c8;
+    --shadow-color: #888888;
+    --text-color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+header h1 {
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    margin-bottom: 1rem;
+}
+
+header p {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+}
+
+/* Navigation */
+
+nav {
+    background-color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #4da6ff;
+}
+
+/* Main Content Grid */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2rem;
+}
+
+/* Card Styling */
+
+.column-card {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.column-card h2,
+.column-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Why Choose Us Section */
+
+.why-us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2rem;
+}
+
+.why-us h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Aside */
+
+aside {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+/* Testimonials */
+
+.testimonials {
+    padding: 2rem;
+}
+
+.testimonials h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+/* About Business Section */
+
+.about-business {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-business h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-business p {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #4da6ff;
+}
+
+/* Tooltips */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dashed black;
+    cursor: help;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -90px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #6d3fa1;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .why-us {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    aside,
+    .about-business {
+        margin: 1rem;
+    }
+}
