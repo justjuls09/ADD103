@@ -38,6 +38,12 @@ header p {
     margin: 0 auto 1rem;
 }
 
+.logo {
+    width: 125px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
 /* Navigation */
 
 nav {
