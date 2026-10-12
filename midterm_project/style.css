@@ -109,6 +109,13 @@ header {
     padding: 2rem;
 }
 
+.section-title{
+    text-align:center;
+    margin-bottom:2rem;
+    color:var(--primary);
+    grid-column:1 / -1;
+}
+
 .card {
     background: var(--card-bg);
     padding: 2rem;
