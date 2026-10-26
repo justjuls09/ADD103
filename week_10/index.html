@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TechieTina Responsive Media Gallery</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    background:#f5f8fc;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#003366,#0066cc);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.hero{
+    margin:30px 0;
+}
+
+.hero img{
+    width:100%;
+    display:block;
+    border-radius:12px;
+}
+
+.section-title{
+    text-align:center;
+    margin:40px 0 20px;
+    color:#003366;
+}
+
+.picture-demo{
+    margin-bottom:40px;
+}
+
+.picture-demo img{
+    width:100%;
+    display:block;
+    border-radius:12px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+
+.gallery-item img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.gallery-item h3{
+    padding:15px;
+    color:#003366;
+}
+
+.gallery-item p{
+    padding:0 15px 15px;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    background:#003366;
+    color:white;
+    padding:20px;
+}
+
+footer a{
+    color:#79c8ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>TechieTina Technology Gallery</h1>
+    <p>
+        Responsive Images, Art Direction, and Modern Web Formats
+    </p>
+</header>
+
+<div class="container">
+
+    <section class="hero">
+
+        <h2 class="section-title">
+            Responsive Hero Image Using Srcset
+        </h2>
+
+        <img
+            src="images/hero-medium.jpg"
+            srcset="
+                images/hero-small.jpg 480w,
+                images/hero-medium.jpg 800w,
+                images/hero-large.jpg 1200w"
+            sizes="
+                (max-width: 600px) 480px,
+                (max-width: 900px) 800px,
+                1200px"
+            alt="TechieTina workstation featuring computer equipment and networking devices">
+
+    </section>
+
+
+    <section class="picture-demo">
+
+        <h2 class="section-title">
+            Art Direction with Picture Element
+        </h2>
+
+        <picture>
+
+            <!-- Mobile version -->
+
+            <source
+                media="(max-width: 767px)"
+                srcset="images/techietina-mobile.webp">
+
+            <!-- Desktop version -->
+
+            <source
+                media="(min-width: 768px)"
+                srcset="images/techietina-desktop.webp">
+
+            <img
+                src="images/techietina-desktop.webp"
+                alt="TechieTina server and networking setup">
+
+        </picture>
+
+    </section>
+
+
+    <section>
+
+        <h2 class="section-title">
+            Technology Gallery
+        </h2>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/logo.webp"
+                    alt="TechieTina logo in WebP format">
+
+                <h3>TechieTina Branding</h3>
+
+                <p>
+                    Company logo optimized using the modern WebP image format.
+                </p>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/server.webp"
+                    alt="Home server hardware and storage system">
+
+                <h3>Home Server Lab</h3>
+
+                <p>
+                    Network attached storage, virtualization, and cloud hosting
+                    solutions.
+                </p>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/networking.webp"
+                    alt="Networking equipment and switches">
+
+                <h3>Networking Solutions</h3>
+
+                <p>
+                    Routers, switches, and infrastructure supporting secure
+                    connectivity.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+
+    <p>
+
+        <a href="../../index.html">
+            Return to Student Portal
+        </a>
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>
